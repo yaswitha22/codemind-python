@@ -1,2 +1,4 @@
-a=input()
-print(a[::-1])
+s=input()
+k=s.split()
+t=k.reverse()
+print(' '.join(k))
