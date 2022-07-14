@@ -1,12 +1,7 @@
-a=input()
+s=input()
 k=input()
-c=0
-for i in a:
-    if i==k:
-        print("True")
-        c+=1
-        print(a.index(i))
-        break
+if k in s:
+    print("True")
+    print(s.index(k))
 else:
-    if c==0:
-        print("False")
+    print("False")
