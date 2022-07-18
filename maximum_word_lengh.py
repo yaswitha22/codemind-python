@@ -1,7 +1,7 @@
 s=input()
 s=s.split()
-c=0
+max1=0
 for i in s:
-    if len(i)>c:
-        c=len(i)
-print(c)
+    if len(i)>max1:
+        max1=len(i)
+print(max1)
