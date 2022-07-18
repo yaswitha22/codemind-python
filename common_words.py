@@ -7,3 +7,4 @@ u=s2.split()
 for i in u:
     if i in t:
         print(i,end=' ')
+        
