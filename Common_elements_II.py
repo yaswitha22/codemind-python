@@ -1,9 +1,11 @@
-x,y=map(int,input().split())
-l=list(map(int,input().split()))
-m=list(map(int,input().split()))
-for i in m:
-    l.append(i)
-for i in l:
-    k=l.count(i)
-    if(k==1):
-        print(i,end=" ")
+a,b=map(int,input().split())
+s1=list(map(int,input().split()))
+s2=list(map(int,input().split()))
+k=[]
+for i in s1:
+    if i not in s2 and i not in k:
+        k.append(i)
+for i in s2:
+    if i not in s1 and i not in k:
+        k.append(i)
+print(*k)
