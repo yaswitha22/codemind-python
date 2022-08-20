@@ -1,11 +1,9 @@
-s=input()
-c=0
+n=input()
 k=''
-for i in s:
+for i in n:
     if i in 'aeiouAEIOU' and i not in k:
-       k+=i
+        k+=i+' '
 if k=='':
     print("-1")
 else:
-    for i in k:
-        print(i,end=' ')
+    print(k.strip())
