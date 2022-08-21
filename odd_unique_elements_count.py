@@ -1,8 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=0
-a=list(set(a))
+k=[]
 for i in a:
-    if i%2==1 and a.count(i)==1:
-        c+=1
-print(c)
+    if i not in k and i%2==1:
+        k.append(i)
+print(len(k))
