@@ -17,3 +17,22 @@ for i in b:
         continue
     s+='C'
 print(s)
+
+'''s="whereabou"
+v='aeiou'
+x,y='',''    
+ans=''        
+for i in range(len(s)):
+    if s[i] not in v:  
+        if len (y)!=0:
+            ans+='V'
+            y=''
+        x+=s[i]
+    else:
+        if len(x)!=0:
+            x=''
+            ans+='C'
+        y+=s[i]
+if x!='':ans+='C'
+if y!='':ans+='V'
+print(ans)'''
